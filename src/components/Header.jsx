@@ -6,7 +6,7 @@ const Header = () => {
     <header className="relative bg-blue">
       <div className="container-div flex flex-col justify-between gap-10 lg:flex-row mx-auto lg:items-center lg:gap-0">
         <div className="text-center max-w-[560px] mx-auto lg:text-left lg:max-w-full lg:w-[54%] lg:pt-32">
-          <h1 className="leading-[45px] max-w-[340px] mx-auto text-[32px] lg:max-w-full lg:leading-[75px] lg:text-[64px]">
+          <h1 className="leading-[45px] max-w-[400px] mx-auto text-[40px] lg:max-w-full lg:leading-[75px] lg:text-[64px]">
             Grow your skills to advance your career path
           </h1>
           <p className="my-8 capitalize max-w-[560px]">

@@ -29,7 +29,7 @@ const WhatIsGtp = () => {
     <div className="sec2 overflow-hidden relative gtp-div py-16 px-5 lg:py-[74px]">
       <div className="container-div flex flex-col justify-between gap-10 lg:flex-row mx-auto lg:items-center lg:gap-0">
         <div className="text-center max-w-[560px] mx-auto lg:text-left lg:max-w-full lg:w-[45%] ">
-          <h3 className="font-bold text-[35px] leading-[45px] mx-auto lg:leading-[75px] max-w-[700px] lg:text-[56px] lg:w-[700px] md:mx-0">
+          <h3 className="font-bold mx-auto lg:leading-[75px] max-w-[700px] lg:w-[700px] md:mx-0">
             High quality video, audio & live classes
           </h3>
           <p className="text-[#A2A2A2] my-8 max-w-[540px] lg:max-w-full capitalize">
@@ -56,7 +56,7 @@ const WhatIsGtp = () => {
             ))}
           </div>
         </div>
-        <div className="img text-center w-full flex justify-center lg:w-[55%]">
+        <div className="img text-center md:max-w-[560px] mx-auto w-full flex justify-center lg:w-[55%]">
           <img src={sec2Img} alt="illustration" />
         </div>
       </div>

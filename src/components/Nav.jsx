@@ -35,7 +35,7 @@ const Nav = () => {
             <li>Case Studies</li>
             <li>Library</li>
             <li>
-              <button className="bg-white text-blue hover:bg-orangeLight py-3 px-7 rounded-[5px]">
+              <button className="bg-white text-blue py-3 px-7 rounded-[5px]">
                 Sign up
               </button>
             </li>

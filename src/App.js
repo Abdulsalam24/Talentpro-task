@@ -8,6 +8,8 @@ import Nav from './components/Nav';
 import Blog from './components/Blog';
 import WhatIsGtp from './components/WhatIsGtp';
 import Footer from './components/Footer';
+import Cards from './components/Cards';
+import Client from './components/Client';
 
 function App() {
 
@@ -18,6 +20,9 @@ function App() {
       <Logo />
       <WhatIsGtp />
       <Feature />
+      <Cards />
+      <Client/>
+
       {/* <Content />
       <Ctr />
       <Blog /> */}
