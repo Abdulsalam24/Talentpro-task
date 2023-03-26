@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+.menu-list li {
+  @apply hover:text-[#b13f26] lg:my-0 font-normal cursor-pointer;
+}
+.blur-img {
+  @apply absolute bg-bluish blur-[282px] -z-10;
+}
+
+.bar {
+  @apply mb-[17px];
+}

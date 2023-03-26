@@ -1,0 +1,137 @@
+body {
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+  background-color: #f8f9fc;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+//Global style
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #81afdd;
+}
+
+h1,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  color: white;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+span {
+  font-size: 12px;
+}
+
+input,
+button {
+  outline: none;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container-div {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 92%;
+}
+
+
+.sec2{
+  // .boxs{
+  //   p{
+  //     font-size: 8px;
+  //     outline: solid red;
+  //   }
+  // }
+}
+
+
+
+.ctr {
+  > div {
+    background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10.7236px;
+  }
+  p {
+    color: #0e0e0e;
+  }
+}
+
+.footer {
+  p,
+  li {
+    color: white;
+  }
+  p {
+    font-size: 14px;
+  }
+  ul {
+    p {
+      margin-bottom: 36px;
+      font-weight: 700;
+    }
+    li {
+      font-size: 12px;
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media (min-width: 976px) {
+  .blog {
+    > div {
+      .blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        > div:nth-child(1) {
+          grid-row: 1/3;
+          width: 419px;
+
+          img {
+            height: 372px;
+            object-fit: cover;
+          }
+          .text {
+            row-gap: 19.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF; */
+
+/* f8: '62px',
+ f7: '34px',
+ f6: '24px',
+ f5: '20px',
+ f4: '18px',
+ f3: "16px",
+ f2: "14px",
+ f1: "12px" */
