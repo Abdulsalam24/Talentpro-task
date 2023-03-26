@@ -17,6 +17,9 @@ li {
   line-height: 30px;
   color: #a2a2a2;
 }
+button {
+  text-transform: capitalize;
+}
 
 .cardFlex {
   display: flex;
@@ -73,22 +76,18 @@ img {
   // }
 }
 
-.footer {
-  p,
-  li {
-    color: white;
-  }
-  p {
-    font-size: 14px;
-  }
+footer {
+  color: white;
   ul {
-    p {
-      margin-bottom: 36px;
-      font-weight: 700;
-    }
+    text-transform: capitalize;
     li {
-      font-size: 12px;
-      margin-bottom: 26px;
+      color: white;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    h4 {
+      font-size: 20px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -104,15 +103,9 @@ h3 {
     font-size: 56px;
     line-height: 70px;
   }
+  footer {
+    h4 {
+      font-size: 40px;
+    }
+  }
 }
-
-/* background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF; */
-
-/* f8: '62px',
- f7: '34px',
- f6: '24px',
- f5: '20px',
- f4: '18px',
- f3: "16px",
- f2: "14px",
- f1: "12px" */

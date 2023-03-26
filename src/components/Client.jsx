@@ -29,6 +29,18 @@ const Client = () => {
       name: "samuel fortune",
       position: "product designer",
     },
+    {
+      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
+      img: commentImg1,
+      name: "samuel fortune",
+      position: "product designer",
+    },
+    {
+      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
+      img: commentImg1,
+      name: "samuel fortune",
+      position: "product designer",
+    },
   ];
 
   return (
@@ -42,14 +54,23 @@ const Client = () => {
             definition, generally any standard video image
           </p>
         </div>
-        <div className="comment">
-                  {
-                      clientComment.map((client) => (
-                          <div>
-                              
-                          </div>
-                      ))
-            }
+
+        <div className="comment flex mt-5 mb-20 justify-between gap-5 max-w-[500px] md:max-w-[5000px] mx-auto px-3 overflow-x-scroll">
+          {clientComment.map((client, index) => (
+            <div
+              key={index}
+              className="bg-white w-full min-w-[400px] rounded-[16px] flex flex-col gap-5 p-5 lg:w-[30%]"
+            >
+              <p>{client.text}</p>
+              <div className="flex items-center gap-4">
+                <img src={client.img} alt="client profile" />
+                <div>
+                  <h5>{client.name}</h5>
+                  <p>{client.position}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

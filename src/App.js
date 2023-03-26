@@ -10,6 +10,8 @@ import WhatIsGtp from './components/WhatIsGtp';
 import Footer from './components/Footer';
 import Cards from './components/Cards';
 import Client from './components/Client';
+import Connect from './components/Connect';
+import Faq from './components/Faq';
 
 function App() {
 
@@ -21,7 +23,11 @@ function App() {
       <WhatIsGtp />
       <Feature />
       <Cards />
-      <Client/>
+      <Client />
+      <Connect />
+      <Faq />
+
+
 
       {/* <Content />
       <Ctr />

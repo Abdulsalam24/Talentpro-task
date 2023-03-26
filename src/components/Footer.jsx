@@ -1,53 +1,64 @@
-import gptLogo from "../asset/img/gpt3-logo.svg";
+import logo from "../asset/img/logo.svg";
+import facebook from "../asset/icons/fbIcon.svg";
+import twitter from "../asset/icons/twIcon.svg";
+import youtube from "../asset/icons/ytIcon.svg";
+import instargram from "../asset/icons/igIcon.svg";
+import discord from "../asset/icons/discordIcon.svg";
 
 const Footer = () => {
+  const socials = [
+    { icon: facebook },
+    { icon: twitter },
+    { icon: youtube },
+    { icon: instargram },
+    { icon: discord },
+  ];
+
   return (
-    <div className="footer bg-blueDark pt-20 px-5 pb-5 lg:pt-[175px] lg:pb-[25px]">
-      <div className="max-w-[1300px] w-[92%] lg:w-[80%] mx-auto">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-[40px] lg:text-center lg:text-[62px]">
-            Do you want to step in to the future before others
-          </h1>
-          <div className="btn lg:text-center mt-[64px] mb-[185px]">
-            <button className="text-lg bg-transparent hover:bg-[#d6d6d625] border border-white p-3 lg:p-6">
-              Request Early Access
+    <footer className="bg-blueDark py-20 md:py-40">
+      <div className="container-div flex flex-col gap-8 justify-center sm:flex-row sm:flex-wrap sm:justify-between">
+        <div className="logo md:w-[15%]">
+          <img src={logo} alt="" />
+          <p className="my-6 max-w-[300px]">
+            Reach out to us on any of our social media networks
+          </p>
+          <div className="flex gap-4 md:gap-2 text-white">
+            {socials.map((social) => (
+              <img src={social.icon} alt="social" />
+            ))}
+          </div>
+        </div>
+        <ul className="md:w-[15%]">
+          <h4>useful links</h4>
+          <li>home</li>
+          <li>about us</li>
+          <li>our courses</li>
+          <li>testimonials</li>
+          <li>our community</li>
+        </ul>
+        <ul className="md:w-[15%]">
+          <h4>community</h4>
+          <li>help centers</li>
+          <li>partners</li>
+          <li>suggestion</li>
+          <li>blog</li>
+          <li>newsletter</li>
+        </ul>
+        <div className="capitalize md:w-[25%]">
+          <h4 className="mb-6 text-xl">subscribe us</h4>
+          <div className="flex items-center w-full">
+            <input
+              className="bg-bluish text-[#424141] py-4 px-4 w-[60%] sm:w-[75%] md:py-6 md:px-6"
+              type="text"
+              placeholder="nft123@gmail.com"
+            />
+            <button className="bg-blue text-xs text-white py-5 px-4 w-[40%] md:py-6">
+              send message
             </button>
           </div>
         </div>
-        <div className="flex flex-col gap-14 lg:flex-row justify-between">
-          <div className="logo lg:w-[20%]">
-            <img className="mb-3 md:w-[118px]" src={gptLogo} alt="gptLogo" />
-            <p className="text-white text-xs leading-4">
-              Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-10 justify-between lg:flex-nowrap lg:w-[60%]">
-            <ul className="w-[260px]">
-              <p>Links</p>
-              <li>Overons</li>
-              <li>Social Media</li>
-              <li>Counters</li>
-              <li>Contact</li>
-            </ul>
-            <ul className="w-[260px]">
-              <p>Company</p>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Contact</li>
-            </ul>
-            <ul className="w-[260px]">
-              <p>Get in touch</p>
-              <li>Crechterwoord K12 182 DK Alknjkcb</li>
-              <li>085-132567</li>
-              <li>info@payme.net</li>
-            </ul>
-          </div>
-        </div>
-        <p className="copyright text-center mt-20">
-          © 2021 GPT-3. All rights reserved.
-        </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -23,10 +23,10 @@ module.exports = {
         'black': " #000F24",
         'orangeLight': '#FF8A71',
         'blueDeep': '#1B78DE',
-        'bluish': ' #052D56',
+        'bluish': '#2A2A2B;',
         'blueLight': "#81afdd",
         'blueLight2': "#71E5FF",
-        'blueDark': '#031B34',
+        'blueDark': '#000F24',
 
       },
     },
