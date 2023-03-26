@@ -1,22 +1,32 @@
 body {
-  overflow-x: hidden;
-  font-family: "Manrope", sans-serif;
+  font-family: satoshiMedium;
   background-color: #f8f9fc;
 }
 
-html {
-  overflow-x: hidden;
+@font-face {
+  font-family: satoshiMedium;
+  src: url("./asset/fonts/satoshi/Satoshi-Medium.otf");
 }
 
-//Global style
+@font-face {
+  font-family: clashDisplayMedium;
+  src: url("./asset/fonts/clashDisplay/ClashDisplay-Medium.otf");
+}
+
+nav {
+  li {
+    color: #aac4e6;
+  }
+}
 
 p,
 li {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  color: #a2a2a2;
+  color: #A1A1A1;
 }
+
 button {
   text-transform: capitalize;
 }
@@ -31,9 +41,13 @@ button {
     font-size: 12px;
   }
 }
+
 h1,
+h2,
 h3,
-h4 {
+h4,
+h5 {
+  font-family: clashDisplayMedium;
   font-weight: 700;
 }
 
@@ -68,12 +82,17 @@ img {
 }
 
 .sec2 {
-  // .boxs{
-  //   p{
-  //     font-size: 8px;
-  //     outline: solid red;
-  //   }
-  // }
+  h3 {
+    position: relative;
+    &::before {
+      content: url("./asset/icons/crownIcon.svg");
+      position: absolute;
+      top: -35px;
+      left: -35px;
+      height: 30px;
+      width: 30px;
+    }
+  }
 }
 
 footer {
@@ -100,7 +119,7 @@ h3 {
 
 @media (min-width: 976px) {
   h3 {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 70px;
   }
   footer {

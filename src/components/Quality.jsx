@@ -1,11 +1,10 @@
 import sec2Img from "../asset/img/sec2-img.svg";
-import groupImg from "../asset/img/group-img.svg";
 import audio from "../asset/img/audio.svg";
 import record from "../asset/img/recordClass.svg";
 import liveCass from "../asset/img/liveClass.svg";
 import notes from "../asset/img/notes.svg";
 
-const WhatIsGtp = () => {
+const Quality = () => {
   const classesItem = [
     {
       icon: audio,
@@ -27,12 +26,12 @@ const WhatIsGtp = () => {
 
   return (
     <div className="sec2 overflow-hidden relative gtp-div py-16 px-5 lg:py-[74px]">
-      <div className="container-div flex flex-col justify-between gap-10 lg:flex-row mx-auto lg:items-center lg:gap-0">
-        <div className="text-center max-w-[560px] mx-auto lg:text-left lg:max-w-full lg:w-[45%] ">
-          <h3 className="font-bold mx-auto lg:leading-[75px] max-w-[700px] lg:w-[700px] md:mx-0">
+      <div className="container-div flex flex-col justify-between gap-10 lg:flex-row mx-auto lg:items-center lg:gap-0 lg:mx-auto">
+        <div className="text-center max-w-[560px] mx-auto lg:text-left lg:max-w-full lg:w-[35%] lg:mx-0">
+          <h3 className="font-bold mx-auto lg:leading-[75px] max-w-[700px] lg:w-[600px] md:mx-0">
             High quality video, audio & live classes
           </h3>
-          <p className="text-[#A2A2A2] my-8 max-w-[540px] lg:max-w-full capitalize">
+          <p className="font-medium my-8 max-w-[540px] lg:max-w-full capitalize">
             high-defination video is video of higher resolution and quality than
             standard definition. while there’s no standard meaning for high
             definition, generally any standard video image
@@ -56,7 +55,7 @@ const WhatIsGtp = () => {
             ))}
           </div>
         </div>
-        <div className="img text-center md:max-w-[560px] mx-auto w-full flex justify-center lg:w-[55%]">
+        <div className="img text-center md:max-w-[560px] mx-auto w-full flex justify-center lg:max-w-full lg:w-[60%] lg:mx-0">
           <img src={sec2Img} alt="illustration" />
         </div>
       </div>
@@ -64,4 +63,4 @@ const WhatIsGtp = () => {
   );
 };
 
-export default WhatIsGtp;
+export default Quality;

@@ -48,11 +48,11 @@ const Footer = () => {
           <h4 className="mb-6 text-xl">subscribe us</h4>
           <div className="flex items-center w-full">
             <input
-              className="bg-bluish text-[#424141] py-4 px-4 w-[60%] sm:w-[75%] md:py-6 md:px-6"
+              className="bg-bluish text-[#424141] py-4 px-4 w-[60%] sm:w-[75%] md:w-[70%] md:py-4 md:px-6"
               type="text"
               placeholder="nft123@gmail.com"
             />
-            <button className="bg-blue text-xs text-white py-5 px-4 w-[40%] md:py-6">
+            <button className="bg-blue text-xs text-white py-5 px-4 w-[40%] md:w-[46%] md:py-5">
               send message
             </button>
           </div>

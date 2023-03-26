@@ -15,7 +15,10 @@ import star from "../asset/icons/starColoured.svg";
 import clock from "../asset/icons/clock.svg";
 import bookIcon from "../asset/icons/book.svg";
 
+import bgStar from '../asset/icons/bgStar.svg'
+
 const Cards = () => {
+
   const cardInfo = [
     {
       img: cardImg1,
@@ -30,68 +33,70 @@ const Cards = () => {
       price: "$15.00",
     },
     {
-      img: cardImg1,
-      dept: "design",
-      title: "introduction to user research in ux design",
+      img: cardImg2,
+      dept: "marketing",
+      title: "introduction to  new marketing audience ",
       star: "4.7k",
-      rate: "(32.7k+)",
-      lesssons: "15 lessons",
-      duration: "23hrs 50mins",
-      profileImg: cardProfile1,
-      profileName: "leonard victor",
-      price: "$15.00",
+      rate: "(8.7k+)",
+      lesssons: "22 lessons",
+      duration: "22hrs 30mins",
+      profileImg: cardProfile2,
+      profileName: "Jeffrey williams",
+      price: "$32.00",
     },
     {
-      img: cardImg1,
-      dept: "design",
-      title: "introduction to user research in ux design",
+      img: cardImg3,
+      dept: "development",
+      title: "introduction to html, css & bootstrap",
       star: "4.7k",
-      rate: "(32.7k+)",
-      lesssons: "15 lessons",
-      duration: "23hrs 50mins",
-      profileImg: cardProfile1,
-      profileName: "leonard victor",
-      price: "$15.00",
+      rate: "(12.7k+)",
+      lesssons: "55 lessons",
+      duration: "45hrs 50mins",
+      profileImg: cardProfile3,
+      profileName: "claretta mason",
+      price: "$55.00",
     },
     {
-      img: cardImg1,
-      dept: "design",
-      title: "introduction to user research in ux design",
+      img: cardImg4,
+      dept: "development",
+      title: "introduction to javascript, git & GitHub",
       star: "4.7k",
       rate: "(32.7k+)",
-      lesssons: "15 lessons",
-      duration: "23hrs 50mins",
-      profileImg: cardProfile1,
-      profileName: "leonard victor",
-      price: "$15.00",
+      lesssons: "22 lessons",
+      duration: "30hrs 50mins",
+      profileImg: cardProfile4,
+      profileName: "Jessica duke",
+      price: "$45.00",
     },
     {
-      img: cardImg1,
-      dept: "design",
-      title: "introduction to user research in ux design",
+      img: cardImg5,
+      dept: "marketing",
+      title: "introduction to outroom  marketing analysis",
       star: "4.7k",
-      rate: "(32.7k+)",
-      lesssons: "15 lessons",
-      duration: "23hrs 50mins",
-      profileImg: cardProfile1,
-      profileName: "leonard victor",
-      price: "$15.00",
+      rate: "(4.7k+)",
+      lesssons: "26 lessons",
+      duration: "33hrs 50mins",
+      profileImg: cardProfile5,
+      profileName: "Samuel jacobs",
+      price: "$25.00",
     },
     {
-      img: cardImg1,
-      dept: "design",
-      title: "introduction to user research in ux design",
+      img: cardImg6,
+      dept: "marketing",
+      title: "introduction to live  marketing analysis",
       star: "4.7k",
-      rate: "(32.7k+)",
-      lesssons: "15 lessons",
-      duration: "23hrs 50mins",
-      profileImg: cardProfile1,
-      profileName: "leonard victor",
-      price: "$15.00",
+      rate: "(15.7k+)",
+      lesssons: "32 lessons",
+      duration: "10hrs 50mins",
+      profileImg: cardProfile6,
+      profileName: "adam smith",
+      price: "$25.00",
     },
   ];
+
   return (
-    <section className="py-20">
+    <section className="py-20 relative">
+      <img className="absolute  top-[10%] left-[10%] md:top-[15%]" src={bgStar} alt="bgStar" />
       <div className="container-div">
         <div className="flex flex-col max-w-[800px] text-center mx-auto justify-center items-center gap-5">
           <h3>browse our popular courses</h3>
@@ -117,7 +122,7 @@ const Cards = () => {
             >
               <img src={card.img} alt="" />
               <div className="dept cardFlex">
-                <span className="py-1 px-4 bg-bluish text-blue rounded-[16px]">
+                <span className="py-1 px-4 bg-[#1E5DCE33] text-[#1E5DCE] rounded-[16px]">
                   {card.dept}
                 </span>
                 <div className="cardFlex">

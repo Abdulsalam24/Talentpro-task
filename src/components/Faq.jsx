@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import bgWave from '../asset/icons/bgWave.svg'
+import bgCircle from "../asset/icons/bgCircle.svg";
+
 
 const Faq = () => {
     
@@ -57,12 +60,14 @@ const Faq = () => {
       accordionInfo.map((x) =>
         x.id === id ? { ...x, view: view } : "nononon"
       ),
-      "accordionInfoaccordionInfo"
     );
   };
 
   return (
-    <section className="py-20">
+    <section className="py-20 relative">
+      <img className="absolute top-[50%] left-[0%]" src={bgWave} alt="" />
+      <img className="absolute top-[10%] right-[10%]" src={bgCircle} alt="" />
+
       <div className="container-div">
         <div className="max-w-[765px] mx-auto">
           <div className="flex capitalize flex-col text-center justify-center items-center gap-2 text-white mb-8">
