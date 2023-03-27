@@ -1,31 +1,10 @@
 import sec2Img from "../asset/img/sec2-img.svg";
-import audio from "../asset/img/audio.svg";
-import record from "../asset/img/recordClass.svg";
-import liveCass from "../asset/img/liveClass.svg";
-import notes from "../asset/img/notes.svg";
+import { classesItem } from "./data";
 
-const Quality = () => {
-  const classesItem = [
-    {
-      icon: audio,
-      text: "Audio classes",
-    },
-    {
-      icon: record,
-      text: "record classes",
-    },
-    {
-      icon: liveCass,
-      text: "liveCass classes",
-    },
-    {
-      icon: notes,
-      text: "notes classes",
-    },
-  ];
+const About = () => {
 
   return (
-    <div className="sec2 overflow-hidden relative gtp-div py-16 px-5 lg:py-[74px]">
+    <main className="sec2 overflow-hidden relative gtp-div py-16 px-5 lg:py-[74px]">
       <div className="container-div flex flex-col justify-between gap-10 lg:flex-row mx-auto lg:items-center lg:gap-0 lg:mx-auto">
         <div className="text-center max-w-[560px] mx-auto lg:text-left lg:max-w-full lg:w-[35%] lg:mx-0">
           <h3 className="font-bold mx-auto lg:leading-[75px] max-w-[700px] lg:w-[600px] md:mx-0">
@@ -59,8 +38,8 @@ const Quality = () => {
           <img src={sec2Img} alt="illustration" />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
-export default Quality;
+export default About;

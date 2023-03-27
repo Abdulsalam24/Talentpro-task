@@ -3,8 +3,6 @@ import groupImg from "../asset/img/group-img.svg";
 import arrow from "../asset/icons/arrow.svg";
 import curryArrow from "../asset/icons/curryArrow.svg";
 
-
-
 const Header = () => {
   return (
     <header className="relative bg-blue">
@@ -23,6 +21,7 @@ const Header = () => {
               <span className="text-sm sm:text-base">Get started now</span>{" "}
               <img className="w-5" src={arrow} alt="arrow" />
             </button>
+
             <button className="text-sm sm:text-base bg-white text-blue py-2 px-2 rounded-[2px] w-[35%] lg:py-3 lg:w-[22%]">
               enroll now
             </button>

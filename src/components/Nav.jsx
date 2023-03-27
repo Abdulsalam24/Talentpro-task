@@ -26,7 +26,7 @@ const Nav = () => {
         <div
           className={`absolute ${
             mobile && "hidden"
-          } top-0 left-0 h-screen bg-blue z-10 text-white w-full flex flex-col gap-5 lg:flex lg:justify-between lg:flex-row lg:bg-inherit lg:items-center lg:static lg:h-20 lg:w-[78%] xl:w-[58%]`}
+          } top-0 left-0 h-screen bg-blue z-10 text-white w-full flex flex-col gap-5 lg:flex lg:justify-between lg:flex-row lg:bg-inherit lg:items-center lg:static lg:h-20 lg:w-[58%]`}
         >
           <ul className="capitalize menu-list flex flex-col gap-10 pt-24 px-7 pb-5 lg:flex-row lg:flex lg:items-center lg:p-0">
             <li className="text-[#ffffff]">Home</li>

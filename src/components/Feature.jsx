@@ -1,33 +1,9 @@
 import bar from "../asset/img/info-bar.svg";
 import sec3Img from "../asset/img/sec3-img.svg";
-import sec3Icon1 from "../asset/img/sec3-icon1.svg";
-import sec3Icon2 from "../asset/img/sec3-icon2.svg";
-import sec3Icon3 from "../asset/img/sec3-icon3.svg";
-import sec3Icon4 from "../asset/img/sec3-icon4.svg";
+import { feature } from "./data";
+
 
 const Feature = () => {
-  const feature = [
-    {
-      secImg: sec3Icon1,
-      heading: "experienced mentors",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.",
-    },
-    {
-      secImg: sec3Icon2,
-      heading: "affordable prices",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.",
-    },
-    {
-      secImg: sec3Icon3,
-      heading: "affordable prices",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.",
-    },
-    {
-      secImg: sec3Icon4,
-      heading: "Really boy law county",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.",
-    },
-  ];
 
   return (
     <div className="container-div relative feature py-20">

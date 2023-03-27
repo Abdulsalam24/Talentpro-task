@@ -1,40 +1,9 @@
 import React, { useState } from "react";
 import bgWave from "../asset/icons/bgWave.svg";
 import bgCircle from "../asset/icons/bgCircle.svg";
+import { accordionInfo } from "./data";
 
 const Faq = () => {
-  const accordionInfo = [
-    {
-      title: "Is there a free trial available?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-    {
-      title: "Can i change my plan later?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-
-    {
-      title: "Are the courses lifetime?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-    {
-      title: "Do i get certified after taking courses?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-    {
-      title: "How do i reach out to mentors?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-    {
-      title: "Do we get job ready after taking courses?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-    {
-      title: "Is there a free trial available?",
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-    },
-  ];
-
   const [selected, setSelected] = useState(null);
 
   const toggle = (id) => {
@@ -47,7 +16,7 @@ const Faq = () => {
   return (
     <section className="py-20 relative">
       <img className="absolute top-[50%] left-[0%]" src={bgWave} alt="" />
-      <img className="absolute top-[10%] right-[10%]" src={bgCircle} alt="" />
+      <img className="absolute top-[5%] md:top-[10%] right-[10%]" src={bgCircle} alt="" />
 
       <div className="container-div">
         <div className="">

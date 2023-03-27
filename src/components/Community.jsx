@@ -18,7 +18,6 @@ const Connect = () => {
           <div>
             <img src={connectImg} alt="connectImg" />
           </div>
-
           <button className="bg-white capitalize text-blue py-4 px-8 rounded-[5px] mt-10 mb-8">
             join our community
           </button>

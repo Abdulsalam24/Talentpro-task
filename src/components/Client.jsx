@@ -28,7 +28,7 @@ const Client = () => {
     <section>
       <div className="conatiner-div">
         <div className="flex flex-col max-w-[800px] text-center mx-auto justify-center items-center gap-5">
-          <h3>what our clients are saying</h3>
+          <h3>What our clients are saying</h3>
           <p className="max-w-[700px] mx-auto mb-16 mt-2">
             high-defination video is video of higher resolution and quality than
             standard definition. while there’s no standard meaning for high

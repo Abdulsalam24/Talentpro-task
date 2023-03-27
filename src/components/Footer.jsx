@@ -1,24 +1,12 @@
 import logo from "../asset/img/logo.svg";
-import facebook from "../asset/icons/fbIcon.svg";
-import twitter from "../asset/icons/twIcon.svg";
-import youtube from "../asset/icons/ytIcon.svg";
-import instargram from "../asset/icons/igIcon.svg";
-import discord from "../asset/icons/discordIcon.svg";
+import { socials } from "./data";
 
 const Footer = () => {
-  const socials = [
-    { icon: facebook },
-    { icon: twitter },
-    { icon: youtube },
-    { icon: instargram },
-    { icon: discord },
-  ];
-
   return (
     <footer className="bg-blueDark py-20 md:py-40">
       <div className="container-div flex flex-col gap-8 justify-center sm:flex-row sm:flex-wrap sm:justify-between">
         <div className="logo md:w-[15%]">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" />
           <p className="my-6 max-w-[300px]">
             Reach out to us on any of our social media networks
           </p>

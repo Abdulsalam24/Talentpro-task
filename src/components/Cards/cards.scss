@@ -1,0 +1,10 @@
+.cardFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  span {
+    color: #1e5dce;
+    font-size: 12px;
+  }
+}
