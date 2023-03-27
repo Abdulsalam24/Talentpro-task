@@ -1,66 +1,47 @@
 import React, { useState } from "react";
-import bgWave from '../asset/icons/bgWave.svg'
+import bgWave from "../asset/icons/bgWave.svg";
 import bgCircle from "../asset/icons/bgCircle.svg";
 
-
 const Faq = () => {
-    
   const accordionInfo = [
     {
-      id: 1,
-      title: "is there a free trial available?",
+      title: "Is there a free trial available?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
     {
-      id: 2,
-      title: "is there a free trial available?",
+      title: "Can i change my plan later?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
 
     {
-      id: 3,
-      title: "is there a free trial available?",
+      title: "Are the courses lifetime?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
     {
-      id: 4,
-      title: "is there a free trial available?",
+      title: "Do i get certified after taking courses?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
     {
-      id: 6,
-      title: "is there a free trial available?",
+      title: "How do i reach out to mentors?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
     {
-      id: 7,
-      title: "is there a free trial available?",
+      title: "Do we get job ready after taking courses?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
     {
-      id: 8,
-      title: "is there a free trial available?",
+      title: "Is there a free trial available?",
       text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. ",
-      view: false,
     },
   ];
 
-  const [view, setView] = useState(true);
+  const [selected, setSelected] = useState(null);
 
-  const handleView = (id) => {
-    setView(!view);
-    accordionInfo.map((x) => (x.id === id ? { ...x, view: view } : x));
-    console.log(
-      accordionInfo.map((x) =>
-        x.id === id ? { ...x, view: view } : "nononon"
-      ),
-    );
+  const toggle = (id) => {
+    if (selected === id) {
+      return setSelected(null);
+    }
+    setSelected(id);
   };
 
   return (
@@ -69,8 +50,8 @@ const Faq = () => {
       <img className="absolute top-[10%] right-[10%]" src={bgCircle} alt="" />
 
       <div className="container-div">
-        <div className="max-w-[765px] mx-auto">
-          <div className="flex capitalize flex-col text-center justify-center items-center gap-2 text-white mb-8">
+        <div className="">
+          <div className="max-w-[765px] mx-auto flex capitalize flex-col text-center justify-center items-center gap-2 text-white mb-8">
             <h3 className="text-black">frequently asked questions</h3>
             <p>
               high-defination video is video of higher resolution and quality
@@ -79,16 +60,28 @@ const Faq = () => {
             </p>
           </div>
 
-          <div className="accordion flex flex-col gap-14 mt-16">
-            {accordionInfo.map((acc) => (
-              <div key={acc.id}>
+          <div className="max-w-[1000px] mx-auto w-full flex flex-col mt-16">
+            {accordionInfo.map((acc, i) => (
+              <div
+                key={i}
+                className="w-full border py-5 border-lightGray border-x-0 border-t-0"
+              >
                 <label
-                  className="text-2xl font-bold"
-                  onClick={() => handleView(acc.id)}
+                  className={` ${
+                    selected === i ? "text-blue" : ""
+                  } cursor-pointer text-2xl flex justify-between items-center font-bold`}
+                  onClick={() => toggle(i)}
                 >
-                  {acc.title}
+                  <i className="not-italic">{acc.title}</i>
+                  <span className="text-lg">{selected === i ? "-" : "+"}</span>
                 </label>
-                {acc.view ? <p className="pt-4">{acc.text}</p> : ""}
+                <p
+                  className={`pt-4 ${
+                    selected === i ? "content show" : "content"
+                  }`}
+                >
+                  {acc.text}
+                </p>
               </div>
             ))}
           </div>

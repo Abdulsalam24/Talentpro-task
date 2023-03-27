@@ -96,7 +96,11 @@ const Cards = () => {
 
   return (
     <section className="py-20 relative">
-      <img className="absolute  top-[10%] left-[10%] md:top-[15%]" src={bgStar} alt="bgStar" />
+      <img
+        className="absolute  top-[10%] left-[10%] md:top-[15%]"
+        src={bgStar}
+        alt="bgStar"
+      />
       <div className="container-div">
         <div className="flex flex-col max-w-[800px] text-center mx-auto justify-center items-center gap-5">
           <h3>browse our popular courses</h3>
@@ -122,7 +126,7 @@ const Cards = () => {
             >
               <img src={card.img} alt="" />
               <div className="dept cardFlex">
-                <span className="py-1 px-4 bg-[#1E5DCE33] text-[#1E5DCE] rounded-[16px]">
+                <span className="py-1 px-4 bg-[#1e5cce5a] rounded-[16px]">
                   {card.dept}
                 </span>
                 <div className="cardFlex">
@@ -132,7 +136,7 @@ const Cards = () => {
                 </div>
               </div>
 
-              <h4 className="text-lg capitalize">{card.title}</h4>
+              <h4 className="text-lg capitalize h-14">{card.title}</h4>
               <div className="cardFlex">
                 <div className="cardFlex">
                   <img src={clock} alt="clock" />
@@ -146,7 +150,7 @@ const Cards = () => {
               <div className="cardFlex">
                 <div className="cardFlex">
                   <img src={card.profileImg} alt="" />
-                  <p>{card.profileName}</p>
+                  <p className="text-black">{card.profileName}</p>
                 </div>
                 <p className="text-blue text-lg font-bold">{card.price}</p>
               </div>

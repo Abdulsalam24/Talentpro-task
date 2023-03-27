@@ -24,7 +24,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  color: #A1A1A1;
+  color: #a1a1a1;
 }
 
 button {
@@ -37,7 +37,7 @@ button {
   align-items: center;
   gap: 5px;
   span {
-    color: #a1a1a1;
+    color: #1e5dce;
     font-size: 12px;
   }
 }
@@ -81,6 +81,19 @@ img {
   width: 92%;
 }
 
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.content.show {
+  height: auto;
+  max-height: 999px;
+  overflow: hidden;
+  transition: 1s;
+}
+
 .sec2 {
   h3 {
     position: relative;
@@ -115,6 +128,32 @@ h3 {
   font-size: 36px;
   line-height: 45px;
   text-transform: capitalize;
+}
+
+.react-multi-carousel-track {
+  margin: 0 0 100px 0;
+  height: 750px !important;
+  gap: 0px !important;
+}
+
+.react-multi-carousel-dot-list {
+  margin-bottom: 20% !important;
+  li {
+    button {
+      background-color: #aac4e6 !important;
+    }
+  }
+  .react-multi-carousel-dot--active {
+    button {
+      background-color: #004db3!important;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .react-multi-carousel-dot-list {
+    margin-bottom: 10% !important;
+  }
 }
 
 @media (min-width: 976px) {

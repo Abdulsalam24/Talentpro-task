@@ -1,47 +1,28 @@
 import React from "react";
-import commentImg1 from "../asset/img/commentImg1.svg";
-import commentImg2 from "../asset/img/commentImg2.svg";
-import commentImg3 from "../asset/img/commentImg3.svg";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { clientComment } from "./data";
 
 const Client = () => {
-  const clientComment = [
-    {
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
-      img: commentImg2,
-      name: "samuel fortune",
-      position: "product designer",
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 1400 },
+      items: 4,
     },
-    {
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
-      img: commentImg3,
-      name: "samuel fortune",
-      position: "product designer",
+    desktop: {
+      breakpoint: { max: 1400, min: 1024 },
+      items: 3,
     },
-    {
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
-      img: commentImg1,
-      name: "samuel fortune",
-      position: "product designer",
+    tablet: {
+      breakpoint: { max: 1024, min: 750 },
+      items: 2,
     },
-    {
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
-      img: commentImg1,
-      name: "samuel fortune",
-      position: "product designer",
+    mobile: {
+      breakpoint: { max: 750, min: 0 },
+      items: 1,
     },
-    {
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
-      img: commentImg1,
-      name: "samuel fortune",
-      position: "product designer",
-    },
-    {
-      text: "high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. high-defination video is video of higher resolution and quality than standard definition. build your future with our quality education. the best and largest all-in-one online tutoring platform in the world",
-      img: commentImg1,
-      name: "samuel fortune",
-      position: "product designer",
-    },
-  ];
+  };
 
   return (
     <section>
@@ -55,11 +36,27 @@ const Client = () => {
           </p>
         </div>
 
-        <div className="comment flex mt-5 mb-20 justify-between gap-5 max-w-[500px] md:max-w-[5000px] mx-auto px-3 overflow-x-scroll">
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          infinite={true}
+          transitionDuration={500}
+          keyBoardControl={true}
+          customTransition="all .5"
+          removeArrowOnDeviceType={[
+            "tablet",
+            "mobile",
+            "desktop",
+            "superLargeDesktop",
+          ]}
+          responsive={responsive}
+          className="transition-all"
+        >
           {clientComment.map((client, index) => (
             <div
               key={index}
-              className="bg-white w-full min-w-[400px] rounded-[16px] flex flex-col gap-5 p-5 lg:w-[30%]"
+              className="item cursor-grab mb-5 bg-white max-w-[350px] w-[90%] lg:min-w-[420px] xl:min-w-[450px] mx-auto rounded-[16px] flex flex-col gap-5 p-10 px-6"
             >
               <p>{client.text}</p>
               <div className="flex items-center gap-4">
@@ -71,7 +68,7 @@ const Client = () => {
               </div>
             </div>
           ))}
-        </div>
+        </Carousel>
       </div>
     </section>
   );
